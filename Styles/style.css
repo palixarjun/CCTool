@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#inputBoxArea {
+  padding: 20px;
+  max-width: 700px; 
+  margin: 40px auto; 
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+select, input, button {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.layer {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#matrixDisplay {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#playfairMatrix {
+  font-family: monospace;
+  white-space: pre-wrap;
+  margin: 10px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: calc(100% - 22px);
+  height: 100px; 
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical; 
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+select, input[type="text"] {
+  margin: 5px 0 15px 0; 
+  padding: 10px;
+  width: calc(100% - 22px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+select:focus, input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 5px 15px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+.mode-buttons {
+  display: flex; 
+  margin-bottom: 20px; 
+}
+
+.mode-button {
+  flex-grow: 1; 
+  margin: 0 5px; 
+  background-color: #bdc3c7; 
+  color: #333;
+}
+
+.mode-button.active {
+  background-color: #2ecc71; 
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; 
+}
+
+.mode-button:first-child {
+  margin-left: 0;
+}
+
+.mode-button:last-child {
+  margin-right: 0;
+}
+
+
+#keyInputDiv {
+    margin-bottom: 15px;
+}
+
+#keyInputDiv label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#keyInputDiv input[type="text"] {
+    width: calc(100% - 90px); 
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 0; 
+}
+
+#keyInputDiv button {
+    display: inline-block !important; 
+    width: auto; 
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+label input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.layer {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.layer label {
+    margin-bottom: 8px;
+}
+
+.layer select,
+.layer input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.layerKeyDiv {
+    margin-top: 10px;
+}
+
+.layerKeyDiv label {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.layerKeyDiv input[type="text"] {
+    width: calc(100% - 200px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+.layerKeyDiv button {
+    display: inline-block !important;
+    width: auto;
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding: 8px 12px; 
+    font-size: 0.9rem;
+}
+
+
+#matrixDisplay {
+  background: #e8f4fd;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #bde0fe;
+  margin-top: 20px;
+}
+
+#matrixDisplay h3 {
+    margin-top: 0;
+    color: #1e4f7a;
+}
+
+#playfairMatrix {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #keyInputDiv input[type="text"],
+    .layerKeyDiv input[type="text"] {
+        width: calc(100% - 130px); 
+    }
+}
+
+#cbx-ml {
+  columns: 2;
+}
