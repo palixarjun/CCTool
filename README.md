@@ -1,4 +1,5 @@
 # CCTool: Classical Cryptography Toolkit
+Copy the URL `https://palixarjun-cctool-zeta.vercel.app/` for deployed version.
 
 ## Implemented Algorithms
 - Caesar Cipher
